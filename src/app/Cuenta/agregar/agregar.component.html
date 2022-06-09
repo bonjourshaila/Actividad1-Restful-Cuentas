@@ -1,0 +1,23 @@
+<div class="container col-md-4">
+  <div class="card">
+    <div class="card-header">
+      <div><h3>AGREGAR CUENTA</h3></div>
+    </div>
+    <div class="card-body">
+      <form action="">
+        <div class="form-group">
+          <label>Número de cuenta:</label>
+          <input type="number" class="form-control"  [(ngModel)]="cuenta.numeroCuenta" name="numeroCuenta">
+        </div>
+        <div class="form-group">
+          <label>Saldo:</label>
+          <input type="number" class="form-control"  [(ngModel)]="cuenta.saldo" name="saldo">
+        </div>
+
+        <button (click)="guardar(cuenta)" class="btn btn-success mt-2">Guardar</button>
+      </form>
+
+    </div>
+  </div>
+</div>
+
